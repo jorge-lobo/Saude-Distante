@@ -1,0 +1,60 @@
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.csproj.AssemblyReference.cache
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.AssemblyInfoInputs.cache
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.AssemblyInfo.cs
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.exe
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.deps.json
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.runtimeconfig.json
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.dll
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.pdb
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.dll
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\obj\Debug\net6.0\refint\Saude-Distante.dll
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.pdb
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.genruntimeconfig.cache
+C:\Users\Utilizador\source\repos\Saude-Distante\Saude-Distante\obj\Debug\net6.0\ref\Saude-Distante.dll
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.exe
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.deps.json
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.runtimeconfig.json
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.dll
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.pdb
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.csproj.AssemblyReference.cache
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.GeneratedMSBuildEditorConfig.editorconfig
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.AssemblyInfoInputs.cache
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.AssemblyInfo.cs
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.csproj.CoreCompileInputs.cache
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.dll
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\obj\Debug\net6.0\refint\Saude-Distante.dll
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.pdb
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.genruntimeconfig.cache
+D:\CESAE\Trabalho grupo\Saude-Distante\Saude-Distante\obj\Debug\net6.0\ref\Saude-Distante.dll
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.exe
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.deps.json
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.runtimeconfig.json
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.dll
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.pdb
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.csproj.AssemblyReference.cache
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.AssemblyInfoInputs.cache
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.AssemblyInfo.cs
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.dll
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\refint\Saude-Distante.dll
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.pdb
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.genruntimeconfig.cache
+C:\Users\Utilizador\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\ref\Saude-Distante.dll
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.exe
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.deps.json
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.runtimeconfig.json
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.dll
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\bin\Debug\net6.0\Saude-Distante.pdb
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.csproj.AssemblyReference.cache
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.AssemblyInfoInputs.cache
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.AssemblyInfo.cs
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.csproj.CoreCompileInputs.cache
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.dll
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\refint\Saude-Distante.dll
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.pdb
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\Saude-Distante.genruntimeconfig.cache
+C:\Users\Cesae\Desktop\Saude-Distante\Saude-Distante\obj\Debug\net6.0\ref\Saude-Distante.dll
