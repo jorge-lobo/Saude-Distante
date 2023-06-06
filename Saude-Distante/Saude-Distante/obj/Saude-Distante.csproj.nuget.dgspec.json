@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Utilizador\\Desktop\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj": {}
+    "C:\\Users\\Cesae\\Documents\\GitHub\\Saude-Distante\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Utilizador\\Desktop\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj": {
+    "C:\\Users\\Cesae\\Documents\\GitHub\\Saude-Distante\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilizador\\Desktop\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
+        "projectUniqueName": "C:\\Users\\Cesae\\Documents\\GitHub\\Saude-Distante\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
         "projectName": "Saude-Distante",
-        "projectPath": "C:\\Users\\Utilizador\\Desktop\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
-        "packagesPath": "C:\\Users\\Utilizador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utilizador\\Desktop\\Saude-Distante\\Saude-Distante\\obj\\",
+        "projectPath": "C:\\Users\\Cesae\\Documents\\GitHub\\Saude-Distante\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
+        "packagesPath": "C:\\Users\\Cesae\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cesae\\Documents\\GitHub\\Saude-Distante\\Saude-Distante\\Saude-Distante\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Utilizador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cesae\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
