@@ -9,7 +9,6 @@ namespace Saude_Distante.Entities
 {
     internal class Clinico : Equipamento
     {
-
         //ATRIBUTOS
 
         public string NomeMaterial { get; set; }

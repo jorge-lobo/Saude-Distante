@@ -93,16 +93,65 @@ internal class Program
          reqEquipClinicos.Add(reqEquipClinico3);
          reqEquipClinicos.Add(reqEquipClinico4);
         */
+
+        //criação de lista de pacientes
+        List<Paciente> pacientes = new List<Paciente>();
+        Paciente paciente1 = new Paciente(PessoaTipo.Paciente, "Vera Lemos", new DateOnly(1965, 02, 15), 125366912, "vera-lemos@gmail.com", 120231303, 1.62, 52, 101, 163, "HTA Grau II", 192, 82);
+        Paciente paciente2 = new Paciente(PessoaTipo.Paciente, "Luís Alves", new DateOnly(1986, 12, 03), 235666546, "luis.alves@gmail.com", 196454330, 1.88, 109, 123, 186, "HTA Grau III", 248, 133);
+        Paciente paciente3 = new Paciente(PessoaTipo.Paciente, "Carla Mota", new DateOnly(1973, 06, 12), 156315465, "carlamota@gmail.com", 153300145, 1.74, 60, 86, 134, "Normal-Alta (1)", 194, 87);
+        Paciente paciente4 = new Paciente(PessoaTipo.Paciente, "Rafael Torres", new DateOnly(1985, 03, 25), 164686660, "rafatorres@gmail.com", 456876766, 1.92, 88, 92, 150, "HTA Grau I", 220, 120);
+        Paciente paciente5 = new Paciente(PessoaTipo.Paciente, "Maria Lima", new DateOnly(1996, 05, 09), 255654662, "malima@gmail.com", 232646464, 1.58, 49, 75, 110, "Óptima", 180, 90);
+        Paciente paciente6 = new Paciente(PessoaTipo.Paciente, "César Antunes", new DateOnly(1943, 08, 29), 112564688, "tunescesar@gmail.com", 123563333, 1.69, 69, 87, 135, "Normal-Alta (1)", 205, 95);
+        Paciente paciente7 = new Paciente(PessoaTipo.Paciente, "Carlota Gomes", new DateOnly(1985, 12, 15), 135466695, "carlota.gomes@gmail.com", 546113351, 1.72, 58, 82, 122, "Normal", 186, 89);
+        Paciente paciente8 = new Paciente(PessoaTipo.Paciente, "Júlio Seixas", new DateOnly(1978, 10, 23), 564646460, "jules.xas@gmail.com", 135646334, 1.78, 70, 94, 150, "HTA Grau I", 203, 105);
+        Paciente paciente9 = new Paciente(PessoaTipo.Paciente, "Teresa Ramos", new DateOnly(1985, 04, 01), 156315465, "teresinharamos@gmail.com", 135666320, 1.54, 47, 75, 110, "Óptima", 190, 86);
+        Paciente paciente10 = new Paciente(PessoaTipo.Paciente, "Vasco Lopes", new DateOnly(1963, 02, 25), 126864663, "vascolopes@gmail.com", 146461133, 1.82, 75, 120, 190, "HTA Grau III", 232, 160);
+        Paciente paciente11 = new Paciente(PessoaTipo.Paciente, "Mafalda Teles", new DateOnly(1966, 10, 07), 213576876, "teles.mafalda@gmail.com", 654132323, 1.63, 56, 87, 145, "Hipertensão Sistólica Isolada (2)", 203, 65);
+        Paciente paciente12 = new Paciente(PessoaTipo.Paciente, "Óscar Pacheco", new DateOnly(1953, 02, 22), 135468333, "o_scar@gmail.com", 465433310, 1.84, 77, 103, 165, "HTA Grau II", 206, 97);
+
+        //inserir os paceintes na lista
+        pacientes.Add(paciente1);
+        pacientes.Add(paciente2);
+        pacientes.Add(paciente3);
+        pacientes.Add(paciente4);
+        pacientes.Add(paciente5);
+        pacientes.Add(paciente6);
+        pacientes.Add(paciente7);
+        pacientes.Add(paciente8);
+        pacientes.Add(paciente9);
+        pacientes.Add(paciente10);
+        pacientes.Add(paciente11);
+        pacientes.Add(paciente12);
+
         //criação da lista de consultas
         List<Consulta> consultas = new List<Consulta>();
-        Consulta consulta1 = new Consulta(1, new DateTime(2023, 06, 12, 10, 23, 24), "Braga", new Paciente(PessoaTipo.Paciente, "Vera Lemos", new DateOnly(1965, 02, 15), 125366912, "vera-lemos@gmail.com", 120231303, 1.62, 52, 0, 0, null, 0, 0));
-        Consulta consulta2 = new Consulta(2, new DateTime(2023, 06, 12, 11, 16, 10), "Braga", new Paciente(PessoaTipo.Paciente, "Luís Alves", new DateOnly(1986, 12, 03), 235666546, "luis.alves@gmail.com", 196454330, 1.88, 79, 0, 0, null, 0, 0));
-        Consulta consulta3 = new Consulta(3, new DateTime(2023, 06, 12, 12, 03, 55), "Braga", new Paciente(PessoaTipo.Paciente, "Carla Mota", new DateOnly(1973, 06, 12), 156315465, "carlamota@gmail.com", 153300145, 1.74, 60, 0, 0, null, 0, 0));
+
+        Consulta consulta1 = new Consulta(1, new DateTime(2023, 06, 01, 10, 23, 24), "Famalicão", new Paciente(PessoaTipo.Paciente, "Vera Lemos", new DateOnly(1965, 02, 15), 125366912, "vera-lemos@gmail.com", 120231303, 1.62, 52, 101, 163, "HTA Grau II", 192, 82));
+        Consulta consulta2 = new Consulta(2, new DateTime(2023, 06, 01, 15, 01, 56), "Braga", new Paciente(PessoaTipo.Paciente, "Luís Alves", new DateOnly(1986, 12, 03), 235666546, "luis.alves@gmail.com", 196454330, 1.88, 109, 123, 186, "HTA Grau III", 248, 133));
+        Consulta consulta3 = new Consulta(3, new DateTime(2023, 06, 02, 09, 42, 33), "Fafe", new Paciente(PessoaTipo.Paciente, "Carla Mota", new DateOnly(1973, 06, 12), 156315465, "carlamota@gmail.com", 153300145, 1.74, 60, 86, 134, "Normal-Alta (1)", 194, 87));
+        Consulta consulta4 = new Consulta(4, new DateTime(2023, 06, 02, 11, 09, 03), "Guimarães", new Paciente(PessoaTipo.Paciente, "Rafael Torres", new DateOnly(1985, 03, 25), 164686660, "rafatorres@gmail.com", 456876766, 1.92, 88, 92, 150, "HTA Grau I", 220, 120));
+        Consulta consulta5 = new Consulta(5, new DateTime(2023, 06, 05, 14, 05, 32), "Famalicão", new Paciente(PessoaTipo.Paciente, "Maria Lima", new DateOnly(1996, 05, 09), 255654662, "malima@gmail.com", 232646464, 1.58, 49, 75, 110, "Óptima", 180, 90));
+        Consulta consulta6 = new Consulta(6, new DateTime(2023, 06, 06, 09, 58, 02), "Fafe", new Paciente(PessoaTipo.Paciente, "César Antunes", new DateOnly(1943, 08, 29), 112564688, "tunescesar@gmail.com", 123563333, 1.69, 69, 87, 135, "Normal-Alta (1)", 205, 95));
+        Consulta consulta7 = new Consulta(7, new DateTime(2023, 06, 06, 11, 11, 41), "Braga", new Paciente(PessoaTipo.Paciente, "Carlota Gomes", new DateOnly(1985, 12, 15), 135466695, "carlota.gomes@gmail.com", 546113351, 1.72, 58, 82, 122, "Normal", 186, 89));
+        Consulta consulta8 = new Consulta(8, new DateTime(2023, 06, 07, 10, 05, 02), "Fafe", new Paciente(PessoaTipo.Paciente, "Júlio Seixas", new DateOnly(1978, 10, 23), 564646460, "jules.xas@gmail.com", 135646334, 1.78, 70, 94, 150, "HTA Grau I", 203, 105));
+        Consulta consulta9 = new Consulta(9, new DateTime(2023, 06, 09, 09, 34, 57), "Guimarães", new Paciente(PessoaTipo.Paciente, "Teresa Ramos", new DateOnly(1985, 04, 01), 156315465, "teresinharamos@gmail.com", 135666320, 1.54, 47, 75, 110, "Óptima", 190, 86));
+        Consulta consulta10 = new Consulta(10, new DateTime(2023, 06, 09, 11, 46, 10), "Braga", new Paciente(PessoaTipo.Paciente, "Vasco Lopes", new DateOnly(1963, 02, 25), 126864663, "vascolopes@gmail.com", 146461133, 1.82, 75, 120, 190, "HTA Grau III", 232, 160));
+        Consulta consulta11 = new Consulta(11, new DateTime(2023, 06, 09, 16, 42, 01), "Guimarães", new Paciente(PessoaTipo.Paciente, "Mafalda Teles", new DateOnly(1966, 10, 07), 213576876, "teles.mafalda@gmail.com", 654132323, 1.63, 56, 87, 145, "Hipertensão Sistólica Isolada (2)", 203, 65));
+        Consulta consulta12 = new Consulta(12, new DateTime(2023, 06, 12, 11, 05, 06), "Famalicão", new Paciente(PessoaTipo.Paciente, "Óscar Pacheco", new DateOnly(1953, 02, 22), 135468333, "o_scar@gmail.com", 465433310, 1.84, 77, 103, 165, "HTA Grau II", 206, 97));
 
         //inserir as consultas na lista de consultas
         consultas.Add(consulta1);
         consultas.Add(consulta2);
         consultas.Add(consulta3);
+        consultas.Add(consulta4);
+        consultas.Add(consulta5);
+        consultas.Add(consulta6);
+        consultas.Add(consulta7);
+        consultas.Add(consulta8);
+        consultas.Add(consulta9);
+        consultas.Add(consulta10);
+        consultas.Add(consulta11);
+        consultas.Add(consulta12);
 
         string local = "Braga";     //variável default para o local. Este é alterado quando da designação da equipa
 
@@ -294,7 +343,7 @@ internal class Program
 
                                 //adicionar o colaborador criado à tabela de administrativos
                                 Administrativo adm = new Administrativo(pessoaTipo, nome, dataNascimento, nif, email, profissao, vencimento, pass, idAdministrativo);
-                                administrativos.Add(adm);
+                                adm.AddAdministrativo(adm);
 
                                 //mensagem a confirmar a criação da ficha do administrativo e impressão dos dados introduzidos
                                 Console.WriteLine("Colaborador criado com sucesso:");
@@ -347,7 +396,7 @@ internal class Program
 
                                 //adicionar o colaborador criado à tabela de enfermeiros
                                 Enfermeiro enf = new Enfermeiro(pessoaTipo, nome, dataNascimento, nif, email, profissao, vencimento, pass, idEnfermeiro, cedulaEnfermeiro);
-                                enfermeiros.Add(enf);
+                                enf.AddEnfermeiro(enf);
 
                                 //mensagem a confirmar a criação da ficha do enfermeiro e impressão dos dados introduzidos
                                 Console.WriteLine("Colaborador criado com sucesso:");
@@ -400,7 +449,7 @@ internal class Program
 
                                 //adicionar o colaborador criado à tabela de médicos
                                 Medico med = new Medico(pessoaTipo, nome, dataNascimento, nif, email, profissao, vencimento, pass, idMedico, cedulaMedico);
-                                medicos.Add(med);
+                                med.AddMedico(med);
 
                                 //mensagem a confirmar a criação da ficha do médico e impressão dos dados introduzidos
                                 Console.WriteLine("Colaborador criado com sucesso:");
@@ -455,7 +504,7 @@ internal class Program
 
                                 //adicionar o colaborador criado à tabela de médicos
                                 Motorista mot = new Motorista(pessoaTipo, nome, dataNascimento, nif, email, profissao, vencimento, pass, idMotorista, numCarta, cartaMotorista);
-                                motoristas.Add(mot);
+                                mot.AddMotorista(mot);
 
                                 //mensagem a confirmar a criação da ficha do motorista e impressão dos dados introduzidos
                                 Console.WriteLine("Colaborador criado com sucesso:");
@@ -972,7 +1021,6 @@ internal class Program
 
                     }
 
-
                     else if (op == 3)
                     {
                         int rel;
@@ -987,6 +1035,27 @@ internal class Program
                         //Relatório Consultas Efectuadas
                         if (rel == 1)
                         {
+                            ///////////////////////////////////////////////////////////////////////
+                            Console.WriteLine("Relatórios de consultas:");
+                            Console.WriteLine("------------------------");
+
+                            Console.WriteLine("1 - Total de consultas | 2 - Consultas por concelho | 3 - Consultas por semana | 4 - Consultas por dia");
+                            Console.Write("Seleccione uma opção: ");
+                            string rel_cons = int.Parse(Console.ReadLine());
+                            Console.WriteLine();
+
+                            if (rel_cons == 1)
+                            {
+
+                            }
+
+
+
+
+
+
+
+
 
                         }
 
@@ -994,7 +1063,7 @@ internal class Program
                         //Relatório Geral
                         else if (rel == 2)
                         {
-
+                            //////////////////////////////////////////////////////////////////////////
                         }
 
 
@@ -1415,17 +1484,26 @@ internal class Program
                             int c1 = int.Parse(Console.ReadLine());
                             Console.WriteLine();
 
-                            ///////////////////////////////////////////////////////////////////////////////
                             //Sub-secção consultar historial paciente
                             if (c1 == 1)
                             {
+                                Console.WriteLine("CONSULTA DADOS DE PACIENTE:");
+                                Console.WriteLine("---------------------------");
 
+                                foreach (Paciente paciente in pacientes)
+                                {
+                                    Console.WriteLine($"Nº Utente: {paciente.NumUtente} | {paciente.Nome} | {paciente.DataNascimento}");
+                                }
 
+                                Console.WriteLine();
+                                Console.Write("Selecione o número de utente: ");
+                                int numUtente = int.Parse(Console.ReadLine());
 
+                                Paciente p1 = pacientes.Find(paciente => paciente.NumUtente.Equals(numUtente));
+                                Console.WriteLine(p1);
 
                             }
-                            ////////////////////////////////////////////////////////////////////////////////
-
+                            
                             //Sub-secção introduzir valores pressão arterial
                             else if (c1 == 2)
                             {
@@ -1437,7 +1515,6 @@ internal class Program
                                     Console.WriteLine($"Consulta #{consulta.IdConsulta}: {consulta.Paciente.Nome} | Nº Utente: {consulta.Paciente.NumUtente}");
                                 }
                                 Console.WriteLine();
-
 
                                 Console.Write("Selecione o número de consulta: ");
                                 int id_cons = int.Parse(Console.ReadLine());
@@ -1464,7 +1541,7 @@ internal class Program
                                 int colesterol = int.Parse(Console.ReadLine());
                                 Console.Write("Insira o valor de glicose: ");
                                 int glicose = int.Parse(Console.ReadLine());
-                                Console.Write("Insira o valor da: ");
+                                Console.Write("Insira o valor da PAD: ");
                                 int valorPad = int.Parse(Console.ReadLine());
                                 Console.Write("Insira o valor da PAS: ");
                                 int valorPas = int.Parse(Console.ReadLine());
@@ -1582,7 +1659,7 @@ internal class Program
                                     //actualização automática do estado do equipamentp para Indisponível
                                     if (i1 != null)
                                     {
-                                        i1.EstadoEquipamento = Enum.Parse<EstadoEquipamento>("Indisponível");
+                                        i1.EstadoEquipamento = EstadoEquipamento.Indisponível;
                                     }
 
                                     //apresentação da lista de requisição de equipamentos informaticos actualizada
@@ -1777,7 +1854,6 @@ internal class Program
                                     //cálculo para repor quantidade na lista
                                     int nQtd = cl1.Quantidade + qtd;
 
-
                                     if (cl1 != null)
                                     {
                                         cl1.Quantidade = nQtd;
@@ -1847,16 +1923,24 @@ internal class Program
                             int c1 = int.Parse(Console.ReadLine());
                             Console.WriteLine();
 
-                            ///////////////////////////////////////////////////////////////////////////////
                             //Sub-secção consultar historial paciente
                             if (c1 == 1)
                             {
+                                Console.WriteLine("CONSULTA DADOS DE PACIENTE:");
+                                Console.WriteLine("---------------------------");
 
+                                foreach (Paciente paciente in pacientes)
+                                {
+                                    Console.WriteLine($"Nº Utente: {paciente.NumUtente} | {paciente.Nome} | {paciente.DataNascimento}");
+                                }
 
+                                Console.WriteLine();
+                                Console.Write("Selecione o número de utente: ");
+                                int numUtente = int.Parse(Console.ReadLine());
 
-
+                                Paciente p1 = pacientes.Find(paciente => paciente.NumUtente.Equals(numUtente));
+                                Console.WriteLine(p1);
                             }
-                            ////////////////////////////////////////////////////////////////////////////////
 
                             //Sub-secção Ficha de consulta
                             else if (c1 == 2)
@@ -1901,7 +1985,7 @@ internal class Program
                                     int colesterol = int.Parse(Console.ReadLine());
                                     Console.Write("Insira o valor de glicose: ");
                                     int glicose = int.Parse(Console.ReadLine());
-                                    Console.Write("Insira o valor da: ");
+                                    Console.Write("Insira o valor da PAD: ");
                                     int valorPad = int.Parse(Console.ReadLine());
                                     Console.Write("Insira o valor da PAS: ");
                                     int valorPas = int.Parse(Console.ReadLine());
@@ -1954,16 +2038,144 @@ internal class Program
                                     }
                                 }
 
+                                string nomeDoenca = null;
+                                string descricao = null;
+                                string posologia = null;
 
-                                /////////////////////////////////////////////////////////////////////////////
+                                //Sub-secção - doença
+                                Console.WriteLine("Secção de doença:");
+                                Console.WriteLine("-----------------");
+                                Console.WriteLine();
+                                Console.Write("Reportar doença (s/n): ");
+                                char d = char.Parse(Console.ReadLine());
+                                Console.WriteLine();
+
+                                //mensegem de erro case seja introduzido um valor errado
+                                if (d != 's' && d != 'S' && d == 'n' && d == 'N')
+                                {
+                                    Console.WriteLine("Valor errado. Digite novamente");
+                                    Console.Write("Reportar doença (s/n): ");
+                                    d = char.Parse(Console.ReadLine());
+                                    Console.WriteLine();
+
+                                }
+
+                                //se não houver doença a reportar a consulta é finalizada
+                                else if (d == 'n' || d == 'N')
+                                {
+                                    Console.WriteLine("______________________________________");
+                                }
+
+                                //caso houver doença
+                                else if (d == 's' || d == 'S')
+                                {
+
+                                    Console.Write("Descrição da doença: ");
+                                    nomeDoenca = Console.ReadLine();
+                                    Console.WriteLine();
+
+                                    Console.Write("Indique a data de diagnóstico (dd/MM/yyyyy): ");
+                                    DateOnly dataDiagnostico = DateOnly.Parse(Console.ReadLine());
+
+                                    //Sub-secção - medicação
+                                    Console.WriteLine();
+                                    Console.Write("Prescrever medicação (s/n): ");
+                                    char m = char.Parse(Console.ReadLine());
+                                    Console.WriteLine();
+
+                                    //mensegem de erro case seja introduzido um valor errado
+                                    if (m != 's' && m != 'S' && m == 'n' && m == 'N')
+                                    {
+                                        Console.WriteLine("Valor errado. Digite novamente");
+                                        Console.Write("Prescrever medicação (s/n): ");
+                                        m = char.Parse(Console.ReadLine());
+                                        Console.WriteLine();
+                                    }
+                                    //se não houver medicação a prescrever a consulta é finalizada
+                                    else if (m == 'n' || m == 'N')
+                                    {
+                                        Console.WriteLine("______________________________________");
+                                    }
+
+                                    //caso houver medicação
+                                    else if (m == 's' || m == 'S')
+                                    {
+                                        Console.WriteLine();
+                                        Console.Write("Já está a tomar a medicação (s/n): ");
+                                        char activa = char.Parse(Console.ReadLine());
+
+                                        //mensegem de erro case seja introduzido um valor errado
+                                        if (activa != 's' && activa != 'S' && activa == 'n' && activa == 'N')
+                                        {
+                                            Console.WriteLine("Valor errado. Digite novamente");
+                                            Console.Write("Deseja nova prescição (s/n): ");
+                                            m = char.Parse(Console.ReadLine());
+                                            Console.WriteLine();
+                                        }
+
+                                        if (activa == 's' || activa == 'S')
+                                        {
+                                            Console.Write("Deseja nova prescição (s/n): ");
+                                            char p = char.Parse(Console.ReadLine());
+
+                                            //mensegem de erro case seja introduzido um valor errado
+                                            if (p != 's' && p != 'S' && p == 'n' && p == 'N')
+                                            {
+                                                Console.WriteLine("Valor errado. Digite novamente");
+                                                Console.Write("Deseja nova prescição (s/n): ");
+                                                m = char.Parse(Console.ReadLine());
+                                                Console.WriteLine();
+                                            }
+
+                                            if (p == 's' || p == 'S')
+                                            {
+                                                Console.Write("Descrição da medicação: ");
+                                                descricao = Console.ReadLine();
+                                                Console.Write("Posologia: ");
+                                                posologia = Console.ReadLine();
+                                                Console.WriteLine("______________________________________");
+                                            }
+
+                                            else if (p == 'n' || p == 'N')
+                                            {
+                                                Console.WriteLine("______________________________________");
+                                            }
+
+                                        }
+                                        else if (activa == 'n' || activa == 'N')
+                                        {
+                                            Console.Write("Descrição da medicação: ");
+                                            descricao = Console.ReadLine();
+                                            Console.Write("Posologia: ");
+                                            posologia = Console.ReadLine();
+                                            Console.WriteLine();
+
+                                            Console.WriteLine("______________________________________");
+                                        }
+
+                                    }
+
+                                }
 
                                 Console.WriteLine();
                                 Console.WriteLine("Relatório da consulta:");
                                 Console.WriteLine("----------------------");
                                 Console.WriteLine(cons1);
+
+
+                                if (nomeDoenca != null)
+                                {
+                                    Console.WriteLine("Doença: " + nomeDoenca);
+                                    if (descricao != null)
+                                    {
+                                        Console.WriteLine("Medicação: " + descricao);
+                                        Console.WriteLine("Posologia: " + posologia);
+                                    }
+                                }
+
                                 Console.WriteLine();
                                 Console.WriteLine("Fim de consulta");
-                                Console.WriteLine();
+                                Console.WriteLine("______________________________________");
                                 Console.WriteLine();
                             }
 
@@ -2015,7 +2227,7 @@ internal class Program
 
                                     Console.WriteLine();
                                     Informatico i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
-                                                                       
+
                                     //adiciona o equipamento seleccionado à lista de requisições de equipamentos informáticos
                                     reqEquipInformaticos.Add(i1);
 

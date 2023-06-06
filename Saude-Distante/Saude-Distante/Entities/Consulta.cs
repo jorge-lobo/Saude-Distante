@@ -14,6 +14,7 @@ namespace Saude_Distante.Entities
         public string Local { get; set; }
         public Paciente Paciente { get; set; }
 
+
         //CONSTRUTORES
 
         public Consulta()
@@ -42,16 +43,17 @@ namespace Saude_Distante.Entities
             sb.AppendLine("Nº de utente: " + Paciente.NumUtente);
             sb.AppendLine("Nome: " + Paciente.Nome);
             sb.AppendLine("Email: " + Paciente.Email);
-            sb.Append("Altura: " + Paciente.Altura + "m | ");
-            sb.AppendLine("Peso: " + Paciente.Peso + "kg");
-            if (Paciente.ValorPad != 0)                                 //os valores de PAD, PAS e HTA só devem aparecer na ficha
-            {                                                           //após o enfermeiro introduzir os valores
+            sb.Append("Altura: " + Paciente.Altura);
+            sb.AppendLine("m | Peso: " + Paciente.Peso + "kg");
+            if (Paciente.ValorPad != 0)                                 //os valores de PAD, PAS e HTA só devem aparecer na ficha //após o enfermeiro introduzir os valores
+            {
+                sb.AppendLine("Valor Colesterol: " + Paciente.Colesterol + "mg/dL");
+                sb.AppendLine("Valor Glicose: " + Paciente.Glicose + "mg/dL");
                 sb.AppendLine("Valores PAD: " + Paciente.ValorPad + "mmHg");
                 sb.AppendLine("Valores PAS: " + Paciente.ValorPas + "mmHg");
-                sb.AppendLine("Hipertensão arterial: " + Paciente.Hta);
+                sb.AppendLine("Hipertensão arterial: " + Paciente.Hta);                
             }
-            sb.AppendLine("__________________________________________________________________");
-
+            
             return sb.ToString();
 
         }

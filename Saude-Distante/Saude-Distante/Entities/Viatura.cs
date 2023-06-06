@@ -14,7 +14,7 @@ namespace Saude_Distante.Entities
         public string Marca { get; set; }
         public string Modelo { get; set; }
         public string Matricula { get; set; }
-        public EstadoEquipamento EstadoViatura { get; set; }    //operacional ou a precisar de assistência
+        public EstadoEquipamento EstadoViatura { get; set; }    
         public TipoViatura TipoViatura { get; set; }      //transporte de passageiros ou ambulante
         
         //CONSTRUTORES

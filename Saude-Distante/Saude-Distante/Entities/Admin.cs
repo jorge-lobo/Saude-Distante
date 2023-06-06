@@ -14,6 +14,10 @@ namespace Saude_Distante.Entities
         public string Email { get; set; }
         protected string Pass { get; set; }
         public List<Equipa> Equipas { get; set; }
+        public List<Administrativo> Administrativos { get; set; } = new List<Administrativo>();
+        public List<Enfermeiro> Enfermeiros { get; set; } = new List<Enfermeiro>();
+        public List<Medico> Medicos { get; set; } = new List<Medico>();
+        public List<Motorista> Motoristas { get; set; } = new List<Motorista>();
 
         //CONSTRUTORES
         public Admin()
@@ -39,7 +43,26 @@ namespace Saude_Distante.Entities
             Equipas.Remove(equipa);
         }
 
-
+        public void AddAdministrativo(Administrativo adm)
+        {
+            Administrativos.Add(adm);
+        }
+        
+        public void AddEnfermeiro(Enfermeiro enf)
+        {
+            Enfermeiros.Add(enf);
+        }
+        
+        public void AddMedico(Medico med)
+        {
+            Medicos.Add(med);
+        }
+       
+        public void AddMotorista(Motorista mot)
+        {
+            Motoristas.Add(mot);
+        }
+        
     }
 
 

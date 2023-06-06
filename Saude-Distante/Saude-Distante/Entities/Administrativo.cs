@@ -21,7 +21,7 @@ namespace Saude_Distante.Entities
         }
 
         //construtor com herança de Profissional        
-        public Administrativo(PessoaTipo pessoaTipo, string nome, DateOnly dataNascimento, int nif, string email, Profissao profissao, double vencimento, string pass, int idAdministrativo) 
+        public Administrativo(PessoaTipo pessoaTipo, string nome, DateOnly dataNascimento, int nif, string email, Profissao profissao, double vencimento, string pass, int idAdministrativo)
             : base(pessoaTipo, nome, dataNascimento, nif, email, profissao, vencimento, pass)
         {
             IdAdministrativo = idAdministrativo;

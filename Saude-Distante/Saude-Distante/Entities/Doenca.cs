@@ -12,7 +12,7 @@ namespace Saude_Distante.Entities
 
         public string NomeDoenca { get; set; }
         public DateOnly DataDiagnostico { get; set; }
-        public DateOnly DataCura { get; set; }
+        
 
         // CONSTRUTORES
 
@@ -21,11 +21,11 @@ namespace Saude_Distante.Entities
 
         }
 
-        public Doenca(string nomeDoenca, DateOnly dataDiagnostico, DateOnly dataCura)
+        public Doenca(string nomeDoenca, DateOnly dataDiagnostico)
         {
             NomeDoenca = nomeDoenca;
             DataDiagnostico = dataDiagnostico;
-            DataCura = dataCura;
+            
         }
 
     }

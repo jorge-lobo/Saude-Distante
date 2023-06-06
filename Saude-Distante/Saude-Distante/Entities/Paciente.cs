@@ -41,5 +41,28 @@ namespace Saude_Distante.Entities
             Glicose = glicose;
         }
 
+        //MÉTODOS
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("DADOS DO UTENTE:");
+            sb.AppendLine("----------------");
+            sb.AppendLine("Nome: " + Nome);
+            sb.AppendLine("Número Utente: " + NumUtente);
+            sb.AppendLine("Data Nascimento: " + DataNascimento);
+            sb.AppendLine("NIF: " + Nif);
+            sb.AppendLine("Email: " + Email);
+            sb.Append("Altura: " + Altura);
+            sb.AppendLine("m | Peso: " + Peso + "kg");
+            sb.AppendLine("Valor Colesterol: " + Colesterol + "mg/dL");
+            sb.AppendLine("Valor Glicose: " + Glicose + "mg/dL");
+            sb.AppendLine("Valores PAD: " + ValorPad + "mmHg");
+            sb.AppendLine("Valores PAS: " + ValorPas + "mmHg");
+            sb.AppendLine("Hipertensão arterial: " + Hta);
+            sb.AppendLine();
+            sb.AppendLine("_____________________________________________");
+
+            return sb.ToString();
+        }
     }
 }

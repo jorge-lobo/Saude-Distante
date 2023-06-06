@@ -11,8 +11,8 @@ namespace Saude_Distante.Entities
         //ATRIBUTOS
 
         public string Descricao { get; set; }
-        public string Prescricao { get; set; }
-        public bool Activa { get; set; }
+        public string Posologia { get; set; }
+        public char Activa { get; set; }
 
         //CONSTRUTORES
 
@@ -21,10 +21,10 @@ namespace Saude_Distante.Entities
             
         }
 
-        public Medicacao(string descricao, string prescricao, bool activa)
+        public Medicacao(string descricao, string posologia, char activa)
         {
             Descricao = descricao;
-            Prescricao = prescricao;
+            Posologia = posologia;
             Activa = activa;
         }
 
