@@ -250,9 +250,9 @@ internal class Program
             Console.WriteLine("LOGIN");
             Console.WriteLine("-----");
             Console.Write("Email: ");
-            string email = Console.ReadLine();      //essencial para encaminhar cada profissional para a sua área
+            string? email = Console.ReadLine();      //essencial para encaminhar cada profissional para a sua área
             Console.Write("Password: ");
-            string pass = Console.ReadLine();
+            string? pass = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("______________________________________________________________________________________________");
             Console.WriteLine("______________________________________________________________________________________________");
@@ -274,7 +274,7 @@ internal class Program
                 {
                     Console.WriteLine("1 - Colaboradores | 2 - Equipas | 3 - Relatórios | 0 - Logout");
                     Console.Write("Seleccione uma opção: ");
-                    op = int.Parse(Console.ReadLine());
+                    op = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine();
 
                     int col;
@@ -286,7 +286,7 @@ internal class Program
                         //Sub-Menu -> Colaboradores
                         Console.WriteLine("1 - Criar Colaborador | 2 - Consultar Colaborador | 3 - Eliminar Colaborador");
                         Console.Write("Seleccione uma opção: ");
-                        col = int.Parse(Console.ReadLine());
+                        col = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine();
 
                         //Sub-secção - Criar colaborador
@@ -298,7 +298,7 @@ internal class Program
                             // é necessário escolher primeiro a profissão, pois cada um tem os seus atributos
                             Console.WriteLine("1 - Administrativo | 2 - Enfermeiro | 3 - Médico | 4 - Motorista");
                             Console.Write("Seleccione a profissão: ");
-                            cr_col = int.Parse(Console.ReadLine());
+                            cr_col = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             //criar administrativo
@@ -310,9 +310,9 @@ internal class Program
                                 int last_adm = administrativos.Count;
                                 int idAdministrativo = last_adm + 1;
                                 Console.Write("Primeiro nome: ");
-                                string pNome = Console.ReadLine();
+                                string? pNome = Console.ReadLine();
                                 Console.Write("Apelido: ");
-                                string uNome = Console.ReadLine();
+                                string? uNome = Console.ReadLine();
                                 string nome = pNome + " " + uNome;  //concatenar o primeiro nome com o apelido
                                 Console.Write("Data de nascimento (dd/MM/aaaa): ");
                                 DateOnly dataNascimento = DateOnly.Parse(Console.ReadLine());
@@ -325,16 +325,16 @@ internal class Program
                                 //atribuição automática de password
                                 //concatenar a primeira letra do primeiro nome com o apelido, com um "." no meio,
                                 //finalizando com 123, tudo em minúsculas
-                                pass = (pNome.Substring(0, 1) + uNome + 123).ToLower();
+                                pass = (pNome?.Substring(0, 1) + uNome + 123).ToLower();
 
                                 // método para substituir os caracteres especiais por caracteres universais
                                 char[] str = ReplaceSpecials(ref email);
                                 str = ReplaceSpecials(ref pass);
 
                                 Console.Write("NIF: ");
-                                int nif = int.Parse(Console.ReadLine());
+                                int nif = Convert.ToInt32(Console.ReadLine());
                                 Console.Write("Vencimento: ");
-                                double vencimento = double.Parse(Console.ReadLine(), CI);
+                                double vencimento = Convert.ToDouble(Console.ReadLine(), CI);
                                 Console.WriteLine();
 
                                 //valores de atributos já pré-definidos referentes a esta profissão
@@ -361,9 +361,9 @@ internal class Program
                                 int last_enf = enfermeiros.Count;
                                 int idEnfermeiro = last_enf + 1;
                                 Console.Write("Primeiro nome: ");
-                                string pNome = Console.ReadLine();
+                                string? pNome = Console.ReadLine();
                                 Console.Write("Apelido: ");
-                                string uNome = Console.ReadLine();
+                                string? uNome = Console.ReadLine();
                                 string nome = pNome + " " + uNome;  //concatenar o primeiro nome com o apelido
                                 Console.Write("Data de nascimento (dd/MM/aaaa): ");
                                 DateOnly dataNascimento = DateOnly.Parse(Console.ReadLine());
@@ -376,18 +376,18 @@ internal class Program
                                 //atribuição automática de password
                                 //concatenar a primeira letra do primeiro nome com o apelido, com um "." no meio,
                                 //finalizando com 123, tudo em minúsculas
-                                pass = (pNome.Substring(0, 1) + uNome + 123).ToLower();
+                                pass = (pNome?.Substring(0, 1) + uNome + 123).ToLower();
 
                                 // método para substituir os caracteres especiais por caracteres universais
                                 char[] str = ReplaceSpecials(ref email);
                                 str = ReplaceSpecials(ref pass);
 
                                 Console.Write("NIF: ");
-                                int nif = int.Parse(Console.ReadLine());
+                                int nif = Convert.ToInt32(Console.ReadLine());
                                 Console.Write("Vencimento: ");
-                                double vencimento = double.Parse(Console.ReadLine(), CI);
+                                double vencimento = Convert.ToDouble(Console.ReadLine(), CI);
                                 Console.Write("Cédula de enfermeiro: ");
-                                string cedulaEnfermeiro = Console.ReadLine();
+                                string? cedulaEnfermeiro = Console.ReadLine();
                                 Console.WriteLine();
 
                                 //valores de atributos já pré-definidos referentes a esta profissão
@@ -414,9 +414,9 @@ internal class Program
                                 int last_med = medicos.Count;
                                 int idMedico = last_med + 1;
                                 Console.Write("Primeiro nome: ");
-                                string pNome = Console.ReadLine();
+                                string? pNome = Console.ReadLine();
                                 Console.Write("Apelido: ");
-                                string uNome = Console.ReadLine();
+                                string? uNome = Console.ReadLine();
                                 string nome = pNome + " " + uNome;  //concatenar o primeiro nome com o apelido
                                 Console.Write("Data de nascimento (dd/MM/aaaa): ");
                                 DateOnly dataNascimento = DateOnly.Parse(Console.ReadLine());
@@ -429,18 +429,18 @@ internal class Program
                                 //atribuição automática de password
                                 //concatenar a primeira letra do primeiro nome com o apelido, com um "." no meio,
                                 //finalizando com 123, tudo em minúsculas
-                                pass = (pNome.Substring(0, 1) + uNome + 123).ToLower();
+                                pass = (pNome?.Substring(0, 1) + uNome + 123).ToLower();
 
                                 // método para substituir os caracteres especiais por caracteres universais
                                 char[] str = ReplaceSpecials(ref email);
                                 str = ReplaceSpecials(ref pass);
 
                                 Console.Write("NIF: ");
-                                int nif = int.Parse(Console.ReadLine());
+                                int nif = Convert.ToInt32(Console.ReadLine());
                                 Console.Write("Vencimento: ");
-                                double vencimento = double.Parse(Console.ReadLine(), CI);
+                                double vencimento = Convert.ToDouble(Console.ReadLine(), CI);
                                 Console.Write("Cédula de médico: ");
-                                string cedulaMedico = Console.ReadLine();
+                                string? cedulaMedico = Console.ReadLine();
                                 Console.WriteLine();
 
                                 //valores de atributos já pré-definidos referentes a esta profissão
@@ -467,9 +467,9 @@ internal class Program
                                 int last_mot = motoristas.Count;
                                 int idMotorista = last_mot + 1;
                                 Console.Write("Primeiro nome: ");
-                                string pNome = Console.ReadLine();
+                                string? pNome = Console.ReadLine();
                                 Console.Write("Apelido: ");
-                                string uNome = Console.ReadLine();
+                                string? uNome = Console.ReadLine();
                                 string nome = pNome + " " + uNome;  //concatenar o primeiro nome com o apelido
                                 Console.Write("Data de nascimento (dd/MM/aaaa): ");
                                 DateOnly dataNascimento = DateOnly.Parse(Console.ReadLine());
@@ -482,20 +482,20 @@ internal class Program
                                 //atribuição automática de password
                                 //concatenar a primeira letra do primeiro nome com o apelido, com um "." no meio,
                                 //finalizando com 123, tudo em minúsculas
-                                pass = (pNome.Substring(0, 1) + uNome + 123).ToLower();
+                                pass = (pNome?.Substring(0, 1) + uNome + 123).ToLower();
 
                                 // método para substituir os caracteres especiais por caracteres universais
                                 char[] str = ReplaceSpecials(ref email);
                                 str = ReplaceSpecials(ref pass);
 
                                 Console.Write("NIF: ");
-                                int nif = int.Parse(Console.ReadLine());
+                                int nif = Convert.ToInt32(Console.ReadLine());
                                 Console.Write("Vencimento: ");
-                                double vencimento = double.Parse(Console.ReadLine(), CI);
+                                double vencimento = Convert.ToDouble(Console.ReadLine(), CI);
                                 Console.Write("Carta de condução: ");
-                                string numCarta = Console.ReadLine();
+                                string? numCarta = Console.ReadLine();
                                 Console.Write("Carta de motorista: ");
-                                string cartaMotorista = Console.ReadLine();
+                                string? cartaMotorista = Console.ReadLine();
                                 Console.WriteLine();
 
                                 //valores de atributos já pré-definidos referentes a esta profissão
@@ -530,7 +530,7 @@ internal class Program
                             // é necessário escolher primeiro a profissão, pois cada um tem os seus atributos
                             Console.WriteLine("1 - Administrativo | 2 - Enfermeiro | 3 - Médico | 4 - Motorista");
                             Console.Write("Seleccione a profissão: ");
-                            cons_col = int.Parse(Console.ReadLine());
+                            cons_col = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             if (cons_col == 1)
@@ -599,7 +599,7 @@ internal class Program
                             // é necessário escolher primeiro a profissão, pois cada um tem os seus atributos
                             Console.WriteLine("1 - Administrativo | 2 - Enfermeiro | 3 - Médico | 4 - Motorista");
                             Console.Write("Seleccione a profissão: ");
-                            del_col = int.Parse(Console.ReadLine());
+                            del_col = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             //eliminar administrativo
@@ -615,7 +615,7 @@ internal class Program
                                 Console.WriteLine();
 
                                 Console.Write("Indique o Id do colaborador a eliminar: ");
-                                int del_id = int.Parse(Console.ReadLine());
+                                int del_id = Convert.ToInt32(Console.ReadLine());
 
                                 int index = del_id - 1;
                                 //como o index de listas começa com o valor 0, é necessário esta fórmula para igualar o index ao ID
@@ -643,7 +643,7 @@ internal class Program
                                 Console.WriteLine();
 
                                 Console.Write("Indique o Id do colaborador a eliminar: ");
-                                int del_id = int.Parse(Console.ReadLine());
+                                int del_id = Convert.ToInt32(Console.ReadLine());
 
                                 int index = del_id - 1;
                                 //como o index de listas começa com o valor 0, é necessário esta fórmula para igualar o index ao ID
@@ -671,7 +671,7 @@ internal class Program
                                 Console.WriteLine();
 
                                 Console.Write("Indique o Id do colaborador a eliminar: ");
-                                int del_id = int.Parse(Console.ReadLine());
+                                int del_id = Convert.ToInt32(Console.ReadLine());
 
                                 int index = del_id - 1;
                                 //como o index de listas começa com o valor 0, é necessário esta fórmula para igualar o index ao ID
@@ -699,7 +699,7 @@ internal class Program
                                 Console.WriteLine();
 
                                 Console.Write("Indique o Id do colaborador a eliminar: ");
-                                int del_id = int.Parse(Console.ReadLine());
+                                int del_id = Convert.ToInt32(Console.ReadLine());
 
                                 int index = del_id - 1;
                                 //como o index de listas começa com o valor 0, é necessário esta fórmula para igualar o index ao ID
@@ -732,7 +732,7 @@ internal class Program
                         //Sub-Menu -> Equipas
                         Console.WriteLine("1 - Criar Equipa | 2 - Consultar Equipas | 3 - Designar Equipa | 4 - Eliminar Equipa");
                         Console.Write("Seleccione uma opção: ");
-                        eq = int.Parse(Console.ReadLine());
+                        eq = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine();
 
                         //Sub-secção - Criar equipa
@@ -773,10 +773,10 @@ internal class Program
                                 }
                                 Console.WriteLine();
                                 Console.Write("Indique o ID do administrativo: ");
-                                int id_adm = int.Parse(Console.ReadLine());
+                                int id_adm = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
 
-                                Administrativo eq_adm = administrativos.Find(administrativo => administrativo.IdAdministrativo.Equals(id_adm));
+                                Administrativo? eq_adm = administrativos.Find(administrativo => administrativo.IdAdministrativo.Equals(id_adm));
 
                                 //é seleccionado o colaborador e atribui-se a variável eq_adm e assim buscam-se os seus atributos
                                 //para depois poderem ser copiados para uma nova variável a ser introduzida na equipa criada
@@ -800,10 +800,10 @@ internal class Program
                                 }
                                 Console.WriteLine();
                                 Console.Write("Indique o ID do enfermeiro: ");
-                                int id_enf = int.Parse(Console.ReadLine());
+                                int id_enf = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
 
-                                Enfermeiro eq_enf = enfermeiros.Find(enfermeiro => enfermeiro.IdEnfermeiro.Equals(id_enf));
+                                Enfermeiro? eq_enf = enfermeiros.Find(enfermeiro => enfermeiro.IdEnfermeiro.Equals(id_enf));
 
                                 //é seleccionado o colaborador e atribui-se a variável eq_enf e assim buscam-se os seus atributos
                                 //para depois poderem ser copiados para uma nova variável a ser introduzida na equipa criada
@@ -827,10 +827,10 @@ internal class Program
                                 }
                                 Console.WriteLine();
                                 Console.Write("Indique o ID do médico: ");
-                                int id_med = int.Parse(Console.ReadLine());
+                                int id_med = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
 
-                                Medico eq_med = medicos.Find(medico => medico.IdMedico.Equals(id_med));
+                                Medico? eq_med = medicos.Find(medico => medico.IdMedico.Equals(id_med));
 
                                 //é seleccionado o colaborador e atribui-se a variável eq_med e assim buscam-se os seus atributos
                                 //para depois poderem ser copiados para uma nova variável a ser introduzida na equipa criada
@@ -854,10 +854,10 @@ internal class Program
                                 }
                                 Console.WriteLine();
                                 Console.Write("Indique o ID do motorista: ");
-                                int id_mot = int.Parse(Console.ReadLine());
+                                int id_mot = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
 
-                                Motorista eq_mot = motoristas.Find(motorista => motorista.IdMotorista.Equals(id_mot));
+                                Motorista? eq_mot = motoristas.Find(motorista => motorista.IdMotorista.Equals(id_mot));
 
                                 //é seleccionado o colaborador e atribui-se a variável eq_mot e assim buscam-se os seus atributos
                                 //para depois poderem ser copiados para uma nova variável a ser introduzida na equipa criada
@@ -913,7 +913,7 @@ internal class Program
                             Console.Write("Indicar o concelho: ");
                             local = Console.ReadLine();
                             Console.Write("Indicar a data (dd/MM/aaaa): ");
-                            DateTime dataConsulta = DateTime.Parse(Console.ReadLine());
+                            DateTime dataConsulta = Convert.ToDateTime(Console.ReadLine());
                             Console.WriteLine();
 
                             //apresentação da lista de equipas para permitir a selecção
@@ -924,7 +924,7 @@ internal class Program
 
                             Console.WriteLine();
                             Console.Write("Seleccione o ID da equipa: ");
-                            int idEqpSelect = int.Parse(Console.ReadLine());
+                            int idEqpSelect = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
                             Console.WriteLine();
 
@@ -1003,7 +1003,7 @@ internal class Program
 
                             Console.WriteLine();
                             Console.Write("Seleccione o ID da equipa a eliminar: ");
-                            del_eqp = int.Parse(Console.ReadLine());
+                            del_eqp = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             //cada equipa tem 4 elementos, logo não podemos eliminar pelo índex. Então optamos pelo IdEquipa seleccionado
@@ -1029,7 +1029,7 @@ internal class Program
                         //Sub-Menu -> Relatórios
                         Console.WriteLine("1 - Consultas Efectuadas | 2 - Relatório Geral | 3 - Vencimentos | 4 - Equipamentos");
                         Console.Write("Seleccione uma opção: ");
-                        rel = int.Parse(Console.ReadLine());
+                        rel = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine();
 
                         //Relatório Consultas Efectuadas
@@ -1041,10 +1041,10 @@ internal class Program
 
                             Console.WriteLine("1 - Total de consultas | 2 - Consultas por concelho | 3 - Consultas por semana | 4 - Consultas por dia");
                             Console.Write("Seleccione uma opção: ");
-                            string rel_cons = int.Parse(Console.ReadLine());
-                            Console.WriteLine();
+                            //string rel_cons = int.TryParse(Console.ReadLine());
+                            //Console.WriteLine();
 
-                            if (rel_cons == 1)
+                            //if (rel_cons == 1)
                             {
 
                             }
@@ -1082,7 +1082,7 @@ internal class Program
 
                             Console.WriteLine();
                             Console.Write("Indique o ID da equipa: ");
-                            int idEqpSelect = int.Parse(Console.ReadLine());
+                            int idEqpSelect = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             Console.WriteLine($"Relatório da equipa #{idEqpSelect}");
@@ -1119,7 +1119,7 @@ internal class Program
                             Console.WriteLine("1 - Viaturas | 2 - Equipamentos Informáticos | 3 - Equipamentos Clínicos");
                             Console.WriteLine();
                             Console.Write("Indique o número da lista a consultar: ");
-                            int l = int.Parse(Console.ReadLine());
+                            int l = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             //Sub-secção viaturas requisitadas
@@ -1205,9 +1205,9 @@ internal class Program
             //Secção do ADMINISTRATIVO - a parte final do email encaminha para a secção de administrativo (_adm@smd.pt)
             else if (email.Contains("_adm@smd.pt"))
             {
-                Administrativo adm1 = administrativos.Find(administrativo => administrativo.Email.Equals(email));
+                Administrativo? adm1 = administrativos.Find(administrativo => administrativo.Email.Equals(email));
 
-                Console.WriteLine($"Olá {adm1.Nome}!");
+                Console.WriteLine($"Olá {adm1?.Nome}!");
                 Console.WriteLine("Bem-vindo à página de Administrativo");
                 Console.WriteLine();
                 Console.WriteLine();
@@ -1220,7 +1220,7 @@ internal class Program
                 {
                     Console.WriteLine("1 - Criar Consulta | 2 - Equipamento | 3 - Criar Relatório Vencimento | 0 - Logout");
                     Console.Write("Seleccione uma opção: ");
-                    op = int.Parse(Console.ReadLine());
+                    op = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine();
 
                     switch (op)
@@ -1244,19 +1244,19 @@ internal class Program
 
                             Console.WriteLine("Dados do paciente:");
                             Console.Write("Nome: ");
-                            string nomeUtente = Console.ReadLine();
+                            string? nomeUtente = Console.ReadLine();
                             Console.Write("Data de nascimento (dd/MM/aaaa): ");
                             DateOnly dataNascimento = DateOnly.Parse(Console.ReadLine());
                             Console.Write("Número de utente: ");
-                            int numUtente = int.Parse(Console.ReadLine());
+                            int numUtente = Convert.ToInt32(Console.ReadLine());
                             Console.Write("NIF: ");
-                            int nif = int.Parse(Console.ReadLine());
+                            int nif = Convert.ToInt32(Console.ReadLine());
                             Console.Write("Altura: ");
-                            double altura = double.Parse(Console.ReadLine(), CI);
+                            double altura =Convert.ToDouble(Console.ReadLine(), CI);
                             Console.Write("Peso: ");
-                            double peso = double.Parse(Console.ReadLine(), CI);
+                            double peso = Convert.ToDouble(Console.ReadLine(), CI);
                             Console.Write("Email: ");
-                            string emailUtente = Console.ReadLine();
+                            string? emailUtente = Console.ReadLine();
                             Console.WriteLine();
                             Console.WriteLine("_________________");
                             Console.WriteLine("Fim do formulário");
@@ -1269,7 +1269,7 @@ internal class Program
                             //os dados clínicos inicialmente têm valor = 0
                             int valorPad = 0;
                             int valorPas = 0;
-                            string hta = null;
+                            string? hta = null;
                             int colesterol = 0;
                             int glicose = 0;
 
@@ -1288,7 +1288,7 @@ internal class Program
                         case 2:
                             Console.WriteLine("1 - Requisitar Equipamento | 2 - Actualizar Estado Equipamento");
                             Console.Write("Seleccione uma opção: ");
-                            int c2 = int.Parse(Console.ReadLine());
+                            int c2 = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             //Sub-menu Requisitar Equipamento:
@@ -1308,7 +1308,7 @@ internal class Program
                                 int last = informaticos.Count;
 
                                 Console.Write("Seleccione o ID do equipamento a requisitar: ");
-                                int id_ei = int.Parse(Console.ReadLine());
+                                int id_ei = Convert.ToInt32(Console.ReadLine());
 
                                 //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                                 while (id_ei > last || id_ei < 1)
@@ -1316,12 +1316,12 @@ internal class Program
                                     Console.WriteLine();
                                     Console.Write("Valor inserido não foi reconhecido no sistema." +
                                         "\nPor favor insira outro valor: ");
-                                    id_ei = int.Parse(Console.ReadLine());
+                                    id_ei = Convert.ToInt32(Console.ReadLine());
                                     Console.WriteLine();
                                 }
 
                                 Console.WriteLine();
-                                Informatico i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
+                                Informatico? i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
 
                                 //adiciona o equipamento seleccionado à lista de requisições de equipamentos informáticos
                                 reqEquipInformaticos.Add(i1);
@@ -1363,7 +1363,7 @@ internal class Program
                                 int last = informaticos.Count;
 
                                 Console.Write("Seleccione o ID da viatura a actualizar: ");
-                                int id_ei = int.Parse(Console.ReadLine());
+                                int id_ei = Convert.ToInt32(Console.ReadLine());
 
                                 //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                                 while (id_ei > last || id_ei < 1)
@@ -1371,12 +1371,12 @@ internal class Program
                                     Console.WriteLine();
                                     Console.Write("Valor inserido não foi reconhecido no sistema." +
                                         "\nPor favor insira outro valor: ");
-                                    id_ei = int.Parse(Console.ReadLine());
+                                    id_ei = Convert.ToInt32(Console.ReadLine());
                                     Console.WriteLine();
                                 }
 
                                 Console.WriteLine();
-                                Informatico i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
+                                Informatico? i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
 
                                 //actualização automática do estado do equipamento para Disponível
                                 if (i1 != null)
@@ -1415,7 +1415,7 @@ internal class Program
 
                             Console.WriteLine();
                             Console.Write("Indique o ID da equipa: ");
-                            int idEqpSelect = int.Parse(Console.ReadLine());
+                            int idEqpSelect = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             foreach (Equipa eqp in equipas)
@@ -1452,9 +1452,9 @@ internal class Program
             //Secção do ENFERMEIRO - a parte final do email encaminha para a secção de enfermeiro (_enf@smd.pt)
             else if (email.Contains("_enf@smd.pt"))
             {
-                Enfermeiro enf1 = enfermeiros.Find(enfermeiro => enfermeiro.Email.Equals(email));
+                Enfermeiro? enf1 = enfermeiros.Find(enfermeiro => enfermeiro.Email.Equals(email));
 
-                Console.WriteLine($"Olá {enf1.Nome}!");
+                Console.WriteLine($"Olá {enf1?.Nome}!");
                 Console.WriteLine("Bem-vindo à página de Enfermeiro");
                 Console.WriteLine();
                 Console.WriteLine();
@@ -1467,7 +1467,7 @@ internal class Program
                 {
                     Console.WriteLine("1 - Consulta | 2 - Equipamento | 0 - Logout");
                     Console.Write("Seleccione uma opção: ");
-                    op = int.Parse(Console.ReadLine());
+                    op = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine();
 
                     switch (op)
@@ -1481,7 +1481,7 @@ internal class Program
                         case 1:
                             Console.WriteLine("1 - Consultar historial do paciente | 2 - Introduzir valores pressão arterial");
                             Console.Write("Seleccione uma opção: ");
-                            int c1 = int.Parse(Console.ReadLine());
+                            int c1 = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             //Sub-secção consultar historial paciente
@@ -1497,9 +1497,9 @@ internal class Program
 
                                 Console.WriteLine();
                                 Console.Write("Selecione o número de utente: ");
-                                int numUtente = int.Parse(Console.ReadLine());
+                                int numUtente = Convert.ToInt32(Console.ReadLine());
 
-                                Paciente p1 = pacientes.Find(paciente => paciente.NumUtente.Equals(numUtente));
+                                Paciente? p1 = pacientes.Find(paciente => paciente.NumUtente.Equals(numUtente));
                                 Console.WriteLine(p1);
 
                             }
@@ -1517,7 +1517,7 @@ internal class Program
                                 Console.WriteLine();
 
                                 Console.Write("Selecione o número de consulta: ");
-                                int id_cons = int.Parse(Console.ReadLine());
+                                int id_cons = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
 
                                 //contar o número de itens na lista para delimitar a validação do número a seleccionar
@@ -1528,25 +1528,25 @@ internal class Program
                                     Console.WriteLine();
                                     Console.Write("Valor inserido não foi reconhecido no sistema." +
                                         "\nPor favor insira outro valor: ");
-                                    id_cons = int.Parse(Console.ReadLine());
+                                    id_cons = Convert.ToInt32(Console.ReadLine());
                                     Console.WriteLine();
                                 }
 
                                 Console.WriteLine();
-                                Consulta cons1 = consultas.Find(consulta => consulta.IdConsulta.Equals(id_cons));
+                                Consulta? cons1 = consultas.Find(consulta => consulta.IdConsulta.Equals(id_cons));
 
                                 Console.WriteLine(cons1);
                                 Console.WriteLine();
                                 Console.Write("Insira o valor de colesterol: ");
-                                int colesterol = int.Parse(Console.ReadLine());
+                                int colesterol = Convert.ToInt32(Console.ReadLine());
                                 Console.Write("Insira o valor de glicose: ");
-                                int glicose = int.Parse(Console.ReadLine());
+                                int glicose = Convert.ToInt32(Console.ReadLine());
                                 Console.Write("Insira o valor da PAD: ");
-                                int valorPad = int.Parse(Console.ReadLine());
+                                int valorPad = Convert.ToInt32(Console.ReadLine());
                                 Console.Write("Insira o valor da PAS: ");
-                                int valorPas = int.Parse(Console.ReadLine());
+                                int valorPas = Convert.ToInt32(Console.ReadLine());
 
-                                string hta = null;
+                                string? hta = null;
 
                                 if (valorPad < 80 && valorPas < 120)
                                 {
@@ -1610,7 +1610,7 @@ internal class Program
                         case 2:
                             Console.WriteLine("1 - Requisitar Equipamento | 2 - Actualizar Estado Equipamento");
                             Console.Write("Seleccione uma opção: ");
-                            int c2 = int.Parse(Console.ReadLine());
+                            int c2 = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             //Sub-secção Requisitar Equipamento:
@@ -1621,7 +1621,7 @@ internal class Program
                                 Console.WriteLine();
                                 Console.WriteLine("1 - Equipamento Informático | 2 - Equipamento Clínico");
                                 Console.Write("Seleccione uma opção: ");
-                                int req = int.Parse(Console.ReadLine());
+                                int req = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
 
                                 // req. equipamento informático
@@ -1638,7 +1638,7 @@ internal class Program
                                     int last = informaticos.Count;
 
                                     Console.Write("Seleccione o ID do equipamento a requisitar: ");
-                                    int id_ei = int.Parse(Console.ReadLine());
+                                    int id_ei = Convert.ToInt32(Console.ReadLine());
 
                                     //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                                     while (id_ei > last || id_ei < 1)
@@ -1646,12 +1646,12 @@ internal class Program
                                         Console.WriteLine();
                                         Console.Write("Valor inserido não foi reconhecido no sistema." +
                                             "\nPor favor insira outro valor: ");
-                                        id_ei = int.Parse(Console.ReadLine());
+                                        id_ei = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine();
                                     }
 
                                     Console.WriteLine();
-                                    Informatico i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
+                                    Informatico? i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
 
                                     //adiciona o equipamento seleccionado à lista de requisições de equipamentos informáticos
                                     reqEquipInformaticos.Add(i1);
@@ -1690,7 +1690,7 @@ internal class Program
                                     int last = clinicos.Count;
 
                                     Console.Write("Seleccione o ID do equipamento a requisitar: ");
-                                    int id_ec = int.Parse(Console.ReadLine());
+                                    int id_ec = Convert.ToInt32(Console.ReadLine());
 
                                     //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                                     while (id_ec > last || id_ec < 1)
@@ -1698,19 +1698,19 @@ internal class Program
                                         Console.WriteLine();
                                         Console.Write("Valor inserido não foi reconhecido no sistema." +
                                             "\nPor favor insira outro valor: ");
-                                        id_ec = int.Parse(Console.ReadLine());
+                                        id_ec = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine();
                                     }
 
                                     Console.WriteLine();
-                                    Clinico cl = clinicos.Find(clinico => clinico.IdEquipamento.Equals(id_ec));
+                                    Clinico? cl = clinicos.Find(clinico => clinico.IdEquipamento.Equals(id_ec));
 
                                     int qtd = 0;
 
                                     if (cl != null)
                                     {
                                         Console.Write("Indique a quantidade: ");
-                                        qtd = int.Parse(Console.ReadLine());
+                                        qtd = Convert.ToInt32(Console.ReadLine());
 
                                         //não permite que o número a requisitar seja maior que o número em stock
                                         if (qtd <= cl.Quantidade && qtd > 0)
@@ -1745,7 +1745,7 @@ internal class Program
                                         else
                                         {
                                             Console.WriteLine("Número em stock insuficiente. Tente outra quantidade: ");
-                                            qtd = int.Parse(Console.ReadLine());
+                                            qtd = Convert.ToInt32(Console.ReadLine());
                                         }
                                     }
                                 }
@@ -1766,7 +1766,7 @@ internal class Program
                                 Console.WriteLine();
                                 Console.WriteLine("1 - Equipamento Informático | 2 - Equipamento Clínico");
                                 Console.Write("Seleccione uma opção: ");
-                                int req = int.Parse(Console.ReadLine());
+                                int req = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
 
                                 //actualizar equipamento informático
@@ -1783,7 +1783,7 @@ internal class Program
                                     int last = informaticos.Count;
 
                                     Console.Write("Seleccione o ID do equipamento a actualizar: ");
-                                    int id_ei = int.Parse(Console.ReadLine());
+                                    int id_ei = Convert.ToInt32(Console.ReadLine());
 
                                     //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                                     while (id_ei > last || id_ei < 1)
@@ -1791,12 +1791,12 @@ internal class Program
                                         Console.WriteLine();
                                         Console.Write("Valor inserido não foi reconhecido no sistema." +
                                             "\nPor favor insira outro valor: ");
-                                        id_ei = int.Parse(Console.ReadLine());
+                                        id_ei = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine();
                                     }
 
                                     Console.WriteLine();
-                                    Informatico i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
+                                    Informatico? i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
 
                                     //actualização automática do estado do equipamento para Disponível
                                     if (i1 != null)
@@ -1833,7 +1833,7 @@ internal class Program
                                     int last = clinicos.Count;
 
                                     Console.Write("Seleccione o ID do equipamento a actualizar: ");
-                                    int id_ec = int.Parse(Console.ReadLine());
+                                    int id_ec = Convert.ToInt32(Console.ReadLine());
 
                                     //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                                     while (id_ec > last || id_ec < 1)
@@ -1841,15 +1841,15 @@ internal class Program
                                         Console.WriteLine();
                                         Console.Write("Valor inserido não foi reconhecido no sistema." +
                                             "\nPor favor insira outro valor: ");
-                                        id_ec = int.Parse(Console.ReadLine());
+                                        id_ec = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine();
                                     }
 
                                     Console.Write("Indique a quantidade: ");
-                                    int qtd = int.Parse(Console.ReadLine());
+                                    int qtd = Convert.ToInt32(Console.ReadLine());
 
                                     Console.WriteLine();
-                                    Clinico cl1 = clinicos.Find(clinico => clinico.IdEquipamento.Equals(id_ec));
+                                    Clinico? cl1 = clinicos.Find(clinico => clinico.IdEquipamento.Equals(id_ec));
 
                                     //cálculo para repor quantidade na lista
                                     int nQtd = cl1.Quantidade + qtd;
@@ -1891,7 +1891,7 @@ internal class Program
             //Secção do MÉDICO - a parte final do email encaminha para a secção de médico (_med@smd.pt)
             else if (email.Contains("_med@smd.pt"))
             {
-                Medico med1 = medicos.Find(medico => medico.Email.Equals(email));
+                Medico? med1 = medicos.Find(medico => medico.Email.Equals(email));
 
                 Console.WriteLine($"Olá {med1.Nome}!");
                 Console.WriteLine("Bem-vindo à página de Médico");
@@ -1906,7 +1906,7 @@ internal class Program
                 {
                     Console.WriteLine("1 - Consulta | 2 - Equipamento | 0 - Logout");
                     Console.Write("Seleccione uma opção: ");
-                    op = int.Parse(Console.ReadLine());
+                    op = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine();
 
                     switch (op)
@@ -1920,7 +1920,7 @@ internal class Program
                         case 1:
                             Console.WriteLine("1 - Consultar historial do paciente | 2 - Ficha de consulta");
                             Console.Write("Seleccione uma opção: ");
-                            int c1 = int.Parse(Console.ReadLine());
+                            int c1 = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             //Sub-secção consultar historial paciente
@@ -1936,9 +1936,9 @@ internal class Program
 
                                 Console.WriteLine();
                                 Console.Write("Selecione o número de utente: ");
-                                int numUtente = int.Parse(Console.ReadLine());
+                                int numUtente = Convert.ToInt32(Console.ReadLine());
 
-                                Paciente p1 = pacientes.Find(paciente => paciente.NumUtente.Equals(numUtente));
+                                Paciente? p1 = pacientes.Find(paciente => paciente.NumUtente.Equals(numUtente));
                                 Console.WriteLine(p1);
                             }
 
@@ -1956,7 +1956,7 @@ internal class Program
 
 
                                 Console.Write("Selecione o número de consulta: ");
-                                int id_cons = int.Parse(Console.ReadLine());
+                                int id_cons = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
 
                                 //contar o número de itens na lista para delimitar a validação do número a seleccionar
@@ -1967,12 +1967,12 @@ internal class Program
                                     Console.WriteLine();
                                     Console.Write("Valor inserido não foi reconhecido no sistema." +
                                         "\nPor favor insira outro valor: ");
-                                    id_cons = int.Parse(Console.ReadLine());
+                                    id_cons = Convert.ToInt32(Console.ReadLine());
                                     Console.WriteLine();
                                 }
 
                                 Console.WriteLine();
-                                Consulta cons1 = consultas.Find(consulta => consulta.IdConsulta.Equals(id_cons));
+                                Consulta? cons1 = consultas.Find(consulta => consulta.IdConsulta.Equals(id_cons));
 
                                 Console.WriteLine(cons1);
                                 Console.WriteLine();
@@ -1982,13 +1982,13 @@ internal class Program
                                 if (ficha == 's')
                                 {
                                     Console.Write("Insira o valor de colesterol: ");
-                                    int colesterol = int.Parse(Console.ReadLine());
+                                    int colesterol = Convert.ToInt32(Console.ReadLine());
                                     Console.Write("Insira o valor de glicose: ");
-                                    int glicose = int.Parse(Console.ReadLine());
+                                    int glicose = Convert.ToInt32(Console.ReadLine());
                                     Console.Write("Insira o valor da PAD: ");
-                                    int valorPad = int.Parse(Console.ReadLine());
+                                    int valorPad = Convert.ToInt32(Console.ReadLine());
                                     Console.Write("Insira o valor da PAS: ");
-                                    int valorPas = int.Parse(Console.ReadLine());
+                                    int valorPas = Convert.ToInt32(Console.ReadLine());
 
                                     string hta = null;
 
@@ -2038,9 +2038,9 @@ internal class Program
                                     }
                                 }
 
-                                string nomeDoenca = null;
-                                string descricao = null;
-                                string posologia = null;
+                                string? nomeDoenca = null;
+                                string? descricao = null;
+                                string? posologia = null;
 
                                 //Sub-secção - doença
                                 Console.WriteLine("Secção de doença:");
@@ -2185,7 +2185,7 @@ internal class Program
                         case 2:
                             Console.WriteLine("1 - Requisitar Equipamento | 2 - Actualizar Estado Equipamento");
                             Console.Write("Seleccione uma opção: ");
-                            int c2 = int.Parse(Console.ReadLine());
+                            int c2 = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine();
 
                             //Sub-secção Requisitar Equipamento:
@@ -2196,7 +2196,7 @@ internal class Program
                                 Console.WriteLine();
                                 Console.WriteLine("1 - Equipamento Informático | 2 - Equipamento Clínico");
                                 Console.Write("Seleccione uma opção: ");
-                                int req = int.Parse(Console.ReadLine());
+                                int req = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
 
                                 // req. equipamento informático
@@ -2213,7 +2213,7 @@ internal class Program
                                     int last = informaticos.Count;
 
                                     Console.Write("Seleccione o ID do equipamento a requisitar: ");
-                                    int id_ei = int.Parse(Console.ReadLine());
+                                    int id_ei = Convert.ToInt32(Console.ReadLine());
 
                                     //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                                     while (id_ei > last || id_ei < 1)
@@ -2221,12 +2221,12 @@ internal class Program
                                         Console.WriteLine();
                                         Console.Write("Valor inserido não foi reconhecido no sistema." +
                                             "\nPor favor insira outro valor: ");
-                                        id_ei = int.Parse(Console.ReadLine());
+                                        id_ei = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine();
                                     }
 
                                     Console.WriteLine();
-                                    Informatico i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
+                                    Informatico? i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
 
                                     //adiciona o equipamento seleccionado à lista de requisições de equipamentos informáticos
                                     reqEquipInformaticos.Add(i1);
@@ -2267,7 +2267,7 @@ internal class Program
                                     int last = clinicos.Count;
 
                                     Console.Write("Seleccione o ID do equipamento a requisitar: ");
-                                    int id_ec = int.Parse(Console.ReadLine());
+                                    int id_ec = Convert.ToInt32(Console.ReadLine());
 
                                     //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                                     while (id_ec > last || id_ec < 1)
@@ -2275,19 +2275,19 @@ internal class Program
                                         Console.WriteLine();
                                         Console.Write("Valor inserido não foi reconhecido no sistema." +
                                             "\nPor favor insira outro valor: ");
-                                        id_ec = int.Parse(Console.ReadLine());
+                                        id_ec = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine();
                                     }
 
                                     Console.WriteLine();
-                                    Clinico cl = clinicos.Find(clinico => clinico.IdEquipamento.Equals(id_ec));
+                                    Clinico? cl = clinicos.Find(clinico => clinico.IdEquipamento.Equals(id_ec));
 
                                     int qtd = 0;
 
                                     if (cl != null)
                                     {
                                         Console.Write("Indique a quantidade: ");
-                                        qtd = int.Parse(Console.ReadLine());
+                                        qtd = Convert.ToInt32(Console.ReadLine());
 
                                         //não permite que o número a requisitar seja maior que o número em stock
                                         if (qtd <= cl.Quantidade && qtd > 0)
@@ -2322,7 +2322,7 @@ internal class Program
                                         else
                                         {
                                             Console.WriteLine("Número em stock insuficiente. Tente outra quantidade: ");
-                                            qtd = int.Parse(Console.ReadLine());
+                                            qtd = Convert.ToInt32(Console.ReadLine());
                                         }
                                     }
                                 }
@@ -2342,7 +2342,7 @@ internal class Program
                                 Console.WriteLine();
                                 Console.WriteLine("1 - Equipamento Informático | 2 - Equipamento Clínico");
                                 Console.Write("Seleccione uma opção: ");
-                                int req = int.Parse(Console.ReadLine());
+                                int req = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
 
                                 //actualizar equipamento informático
@@ -2359,7 +2359,7 @@ internal class Program
                                     int last = informaticos.Count;
 
                                     Console.Write("Seleccione o ID do equipamento a actualizar: ");
-                                    int id_ei = int.Parse(Console.ReadLine());
+                                    int id_ei = Convert.ToInt32(Console.ReadLine());
 
                                     //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                                     while (id_ei > last || id_ei < 1)
@@ -2367,12 +2367,12 @@ internal class Program
                                         Console.WriteLine();
                                         Console.Write("Valor inserido não foi reconhecido no sistema." +
                                             "\nPor favor insira outro valor: ");
-                                        id_ei = int.Parse(Console.ReadLine());
+                                        id_ei = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine();
                                     }
 
                                     Console.WriteLine();
-                                    Informatico i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
+                                    Informatico? i1 = informaticos.Find(informatico => informatico.IdEquipamento.Equals(id_ei));
 
                                     //actualização automática do estado do equipamento para Disponível
                                     if (i1 != null)
@@ -2409,7 +2409,7 @@ internal class Program
                                     int last = clinicos.Count;
 
                                     Console.Write("Seleccione o ID do equipamento a actualizar: ");
-                                    int id_ec = int.Parse(Console.ReadLine());
+                                    int id_ec = Convert.ToInt32(Console.ReadLine());
 
                                     //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                                     while (id_ec > last || id_ec < 1)
@@ -2417,15 +2417,15 @@ internal class Program
                                         Console.WriteLine();
                                         Console.Write("Valor inserido não foi reconhecido no sistema." +
                                             "\nPor favor insira outro valor: ");
-                                        id_ec = int.Parse(Console.ReadLine());
+                                        id_ec = Convert.ToInt32(Console.ReadLine());
                                         Console.WriteLine();
                                     }
 
                                     Console.Write("Indique a quantidade: ");
-                                    int qtd = int.Parse(Console.ReadLine());
+                                    int qtd = Convert.ToInt32(Console.ReadLine());
 
                                     Console.WriteLine();
-                                    Clinico cl1 = clinicos.Find(clinico => clinico.IdEquipamento.Equals(id_ec));
+                                    Clinico? cl1 = clinicos.Find(clinico => clinico.IdEquipamento.Equals(id_ec));
 
                                     //cálculo para repor quantidade na lista
                                     int nQtd = cl1.Quantidade + qtd;
@@ -2467,7 +2467,7 @@ internal class Program
             //Secção do MOTORISTA - a parte final do email encaminha para a secção de motorista (_mot@smd.pt)
             else if (email.Contains("_mot@smd.pt"))
             {
-                Motorista mot1 = motoristas.Find(motorista => motorista.Email.Equals(email));
+                Motorista? mot1 = motoristas.Find(motorista => motorista.Email.Equals(email));
 
                 Console.WriteLine($"Olá {mot1.Nome}!");
                 Console.WriteLine("Bem-vindo à página de Motorista");
@@ -2482,7 +2482,7 @@ internal class Program
                 {
                     Console.WriteLine("1 - Requisitar Viatura | 2 - Atualizar Estado de Viatura | 0 - Logout");
                     Console.Write("Seleccione uma opção: ");
-                    op = int.Parse(Console.ReadLine());
+                    op = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine();
 
                     switch (op)
@@ -2508,7 +2508,7 @@ internal class Program
 
                             Console.WriteLine();
                             Console.Write("Seleccione o ID da viatura a requisitar: ");
-                            int id_v = int.Parse(Console.ReadLine());
+                            int id_v = Convert.ToInt32(Console.ReadLine());
 
                             //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                             while (id_v > last || id_v < 1)
@@ -2516,12 +2516,12 @@ internal class Program
                                 Console.WriteLine();
                                 Console.Write("Valor inserido não foi reconhecido no sistema." +
                                     "\nPor favor insira outro valor: ");
-                                id_v = int.Parse(Console.ReadLine());
+                                id_v = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
                             }
 
                             Console.WriteLine();
-                            Viatura v1 = viaturas.Find(viatura => viatura.IdEquipamento.Equals(id_v));
+                            Viatura? v1 = viaturas.Find(viatura => viatura.IdEquipamento.Equals(id_v));
 
                             //adiciona a viatura seleccionada à lista de requisições de viaturas
                             reqViaturas.Add(v1);
@@ -2562,7 +2562,7 @@ internal class Program
                             int last1 = viaturas.Count;
 
                             Console.Write("Seleccione o ID da viatura a actualizar: ");
-                            int id = int.Parse(Console.ReadLine());
+                            int id = Convert.ToInt32(Console.ReadLine());
 
                             //se o valor do ID não corresponder com nenhum ID na lista, apresentar mensagem de erro e pedir novo número
                             while (id > last1 || id < 1)
@@ -2570,12 +2570,12 @@ internal class Program
                                 Console.WriteLine();
                                 Console.Write("Valor inserido não foi reconhecido no sistema." +
                                     "\nPor favor insira outro valor: ");
-                                id = int.Parse(Console.ReadLine());
+                                id = Convert.ToInt32(Console.ReadLine());
                                 Console.WriteLine();
                             }
 
                             Console.WriteLine();
-                            Viatura v2 = viaturas.Find(viatura => viatura.IdEquipamento.Equals(id));
+                            Viatura? v2 = viaturas.Find(viatura => viatura.IdEquipamento.Equals(id));
 
                             //actualização automática do estado da viatura para Disponível
                             if (v2 != null)

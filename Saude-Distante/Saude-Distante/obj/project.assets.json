@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Cesae\\.nuget\\packages\\": {}
+    "C:\\Users\\Aromantic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cesae\\Documents\\GitHub\\Saude-Distante\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
+      "projectUniqueName": "D:\\Ferramentas SWD\\Saude-Distante\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
       "projectName": "Saude-Distante",
-      "projectPath": "C:\\Users\\Cesae\\Documents\\GitHub\\Saude-Distante\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
-      "packagesPath": "C:\\Users\\Cesae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cesae\\Documents\\GitHub\\Saude-Distante\\Saude-Distante\\Saude-Distante\\obj\\",
+      "projectPath": "D:\\Ferramentas SWD\\Saude-Distante\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
+      "packagesPath": "C:\\Users\\Aromantic\\.nuget\\packages\\",
+      "outputPath": "D:\\Ferramentas SWD\\Saude-Distante\\Saude-Distante\\Saude-Distante\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Cesae\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aromantic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
