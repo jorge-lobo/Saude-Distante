@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Aromantic\\.nuget\\packages\\": {}
+    "C:\\Users\\Utilizador\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ferramentas SWD\\Saude-Distante\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
+      "projectUniqueName": "C:\\Users\\Utilizador\\Desktop\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
       "projectName": "Saude-Distante",
-      "projectPath": "D:\\Ferramentas SWD\\Saude-Distante\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
-      "packagesPath": "C:\\Users\\Aromantic\\.nuget\\packages\\",
-      "outputPath": "D:\\Ferramentas SWD\\Saude-Distante\\Saude-Distante\\Saude-Distante\\obj\\",
+      "projectPath": "C:\\Users\\Utilizador\\Desktop\\Saude-Distante\\Saude-Distante\\Saude-Distante.csproj",
+      "packagesPath": "C:\\Users\\Utilizador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Utilizador\\Desktop\\Saude-Distante\\Saude-Distante\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aromantic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Utilizador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
